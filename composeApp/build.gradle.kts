@@ -17,6 +17,12 @@ kotlin {
     
     sourceSets {
         androidMain.dependencies {
+            implementation(project.dependencies.platform(libs.androidx.compose.bom))
+            implementation(libs.androidx.compose.material3)
+            implementation(libs.androidx.compose.ui)
+            implementation(libs.androidx.compose.ui.tooling.preview)
+            implementation(libs.material)
+
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
         }
