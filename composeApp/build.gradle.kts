@@ -22,6 +22,7 @@ kotlin {
             implementation(libs.androidx.compose.ui)
             implementation(libs.androidx.compose.ui.tooling.preview)
             implementation(libs.material)
+            implementation(libs.androidx.compose.material.icons.extended)
 
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
