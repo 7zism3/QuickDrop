@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Chia sẻ nhanh</string>
+    <string name="send_file">Gửi tệp</string>
+    <string name="receive_file">Nhận tệp</string>
+    <string name="connecting">Đang kết nối...</string>
+    <string name="connection_failed">Kết nối thất bại</string>
+</resources>

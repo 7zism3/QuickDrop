@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.mokoResources)
 }
 
 kotlin {
@@ -25,6 +26,8 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             implementation(libs.kotlinx.coroutines.core)
+            implementation(libs.resources )
+            implementation(libs.resources.compose )
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -35,6 +38,11 @@ kotlin {
             implementation(libs.androidx.annotation)
         }
     }
+}
+
+multiplatformResources {
+    resourcesPackage.set("com.sevenhallo.quickdrop.shared")
+    iosBaseLocalizationRegion.set("en") // mặc định tiếng Anh
 }
 
 android {

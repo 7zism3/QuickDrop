@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quick Drop</string>
+    <string name="send_file">Send file</string>
+    <string name="receive_file">Receive file</string>
+    <string name="connecting">Connecting...</string>
+    <string name="connection_failed">Connection failed</string>
+</resources>
