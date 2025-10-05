@@ -6,14 +6,17 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import com.sevenhallo.quickdrop.ui.WifiAwareApp
+import com.sevenhallo.quickdrop.ui.theme.QuickDropTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
-
         setContent {
-            App()
+            QuickDropTheme {
+                WifiAwareApp()
+            }
         }
     }
 }
@@ -21,5 +24,7 @@ class MainActivity : ComponentActivity() {
 @Preview
 @Composable
 fun AppAndroidPreview() {
-    App()
+    QuickDropTheme {
+        WifiAwareApp()
+    }
 }
